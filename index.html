@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Skilling Pakistan</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <link href="./assets/assets_new/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/assets_new/style.css" rel="stylesheet">
+    <link href="./assets/assets_new/bootstrap/fonts/font-awesome.min.css" rel="stylesheet">
+
+
+    <link href="./assets/assets_new/header.css" rel="stylesheet">
+    <link href="./assets/assets_new/footer.css" rel="stylesheet">
+    <link href="./assets/assets_new/home.css" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/assets_new/bootstrap/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./assets/assets_new/bootstrap/css/slick.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <!-- /.top-bar -->
+            <div class="top-bar">
+                <div class="container-fluid" style="width:90%">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p style="font-size: 12px; padding-top:4px;"><i class="fa fa-home"></i> Plot No. 38 Kirthar
+                                Road, Sector H-9/4 Islamabad, Pakistan</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li style="font-size: 12px"><i class="fa fa-phone mr-1"></i> 92-51-9044444</li>
+                                <li style="font-size: 12px"><i class="fa fa-envelope mr-1"></i> info@navttc.gov.pk </li>
+                                <li><a style="color: white; font-size: 12px" href="#">Login/</a><a
+                                        style="color: white; font-size:12px;" href="#">Register</a></li>
+
+                                <li><a style="color: white; font-size:12px" href="#">Assesment /</a><a
+                                        style="color: white; font-size:12px;" href="#" onclick="event.preventDefault();
+                                                          document.getElementById('logout-form').submit();"
+                                        class="btn btn-default btn-flat">Logout</a>
+                                    <form id="logout-form" action="#" method="POST" style="display: none;">
+                                    </form>
+                                </li>
+                                <li><a style="color: white; font-size:12px" href="#">My
+                                        Account /</a><a style="color: white; font-size:12px;" href="#" onclick="event.preventDefault();
+                                                          document.getElementById('logout-form').submit();"
+                                        class="btn btn-default btn-flat">Logout</a>
+                                    <form id="logout-form" action="#" method="POST" style="display: none;">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Topbar-->
+
+
+            <!-- /header-section -->
+            <div class="container-y py-4 px-5 d-flex justify-content-between" style="background-color: #4B62BE">
+                <img style="height:80px;" src="./assets/images/nsis-logo-white.png" class="img-fluid">
+                <div id="translate-container">
+                    <div id="google_translate_element"></div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 justify-content-around">
+                        <li class="nav-item pt-3 text-center w-10  active">
+                            <a href="#" class="nav-link d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-home mb-1">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item pt-3 text-center w-10">
+                            <a href="#" class="nav-link d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                                </svg>
+                                <span>About us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item pt-3 text-center w-10"><a href="#"
+                                class="nav-link d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M3 21l18 0" />
+                                    <path d="M3 10l18 0" />
+                                    <path d="M5 6l7 -3l7 3" />
+                                    <path d="M4 10l0 11" />
+                                    <path d="M20 10l0 11" />
+                                    <path d="M8 14l0 3" />
+                                    <path d="M12 14l0 3" />
+                                    <path d="M16 14l0 3" />
+                                </svg>
+                                <span>Institutes</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item pt-3 dropdown text-center w-10">
+                            <a class="nav-link d-flex align-items-end justify-content-center" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <div class="d-flex flex-column align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                        fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-square">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M9 10a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                        <path d="M6 21v-1a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v1" />
+                                        <path
+                                            d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+                                    </svg>
+                                    <span>Employer</span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                    fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M6 9l6 6l6 -6" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">National</a>
+                                <a class="dropdown-item" href="#">Islamabad</a>
+                                <a class="dropdown-item" href="#">Punjab</a>
+                                <a class="dropdown-item" href="#">Sindh</a>
+                                <a class="dropdown-item" href="#">Khyber
+                                    Pakhtunkhwa</a>
+                                <a class="dropdown-item" href="#">Balochistan</a>
+                                <a class="dropdown-item" href="#">Gilgit
+                                    Baltistan</a>
+                                <a class="dropdown-item" href="#">Azad Jammu
+                                    Kashmir</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item pt-3 text-center w-10"><a href="#"
+                                class="nav-link d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-list-search">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M15 15m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M18.5 18.5l2.5 2.5" />
+                                    <path d="M4 6h16" />
+                                    <path d="M4 12h4" />
+                                    <path d="M4 18h4" />
+                                </svg>
+                                <span>Jobs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item pt-3 text-center w-10">
+                            <a href="#" class="nav-link d-flex flex-column align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-phone-call">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                    <path d="M15 7a2 2 0 0 1 2 2" />
+                                    <path d="M15 3a6 6 0 0 1 6 6" />
+                                </svg>
+                                <span>Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Header -->
+
+
+            <!-- Main Section-->
+            <div class="slider-container" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                <div class="your-slider center">
+                    <div class="slide" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                        <div class="slide-content">
+                            <div class="row p-5 ">
+
+                                <div class="col-12 col-sm-12 col-md-6">
+
+                                    <img class="img-fluid w-100" src="assets/images/adobestock_421019853.jpeg"
+                                        alt="Slide 1">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+
+                                    <h3>New Series of Insights</h3>
+                                    <p>We developed six new thematic dashboards that look at trends in employment and
+                                        skills from various angles, such as digitalisation and technology, future
+                                        trends, or job demand in online job postings. Access the new dashboards from the
+                                        menu above, or the tiles below.
+
+                                    </p>
+                                    <a href="#" class="btn">Learn More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                        <div class="slide-content">
+                            <div class="row p-5 ">
+
+                                <div class="col-12 col-sm-12 col-md-6">
+
+                                    <img class="img-fluid w-100" src="assets/images/adobestock_421019853.jpeg"
+                                        alt="Slide 1">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+
+                                    <h3>New Series of Insights</h3>
+                                    <p>We developed six new thematic dashboards that look at trends in employment and
+                                        skills from various angles, such as digitalisation and technology, future
+                                        trends, or job demand in online job postings. Access the new dashboards from the
+                                        menu above, or the tiles below.
+
+                                    </p>
+                                    <a href="#" class="btn">Learn More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                        <div class="slide-content">
+                            <div class="row p-5 ">
+
+                                <div class="col-12 col-sm-12 col-md-6">
+
+                                    <img class="img-fluid w-100" src="assets/images/adobestock_421019853.jpeg"
+                                        alt="Slide 1">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+
+                                    <h3>New Series of Insights</h3>
+                                    <p>We developed six new thematic dashboards that look at trends in employment and
+                                        skills from various angles, such as digitalisation and technology, future
+                                        trends, or job demand in online job postings. Access the new dashboards from the
+                                        menu above, or the tiles below.
+
+                                    </p>
+                                    <a href="#" class="btn">Learn More</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="play-pause-btn" id="play-pause-icon">❚❚</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-50"></div>
+
+    <div class="container cardOnCaurosal">
+
+        <div class="row">
+            <div class="p-0 col-12 col-sm-12 col-md-3">
+
+                <div class="card-trio">
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+                    <div class="card-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"
+                            style="enable-background:new 0 0 28 32" xml:space="preserve">
+                            <path fill="#b1cfed"
+                                d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                            <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                        </svg>
+                        <div class="height-20px"></div>
+                        <h6 class="cardmain">Enrollment Capacity</h6>
+                    </div>
+
+                    <div class="mt-6rem">
+                        <h1 class="showFigure">3215</h1>
+                        <p class="cardSub">Total Enrollments</p>
+                    </div>
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+
+
+                </div>
+            </div>
+            <div class="p-0 col-12 col-sm-12 col-md-3">
+                <div class="card-mid">
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+                    <div class="card-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"
+                            style="enable-background:new 0 0 28 32" xml:space="preserve">
+                            <path fill="#b1cfed"
+                                d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                            <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                        </svg>
+                        <div class="height-20px"></div>
+                        <h6 class="cardmain">Enrollment Capacity</h6>
+                    </div>
+
+                    <div class="mt-6rem">
+                        <h1 class="showFigure">3215</h1>
+                        <p class="cardSub">Total Enrollments</p>
+                    </div>
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+
+                </div>
+            </div>
+
+            <div class="p-0  col-12 col-sm-12 col-md-3">
+
+                <div class="card-trio">
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+                    <div class="card-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"
+                            style="enable-background:new 0 0 28 32" xml:space="preserve">
+                            <path fill="#b1cfed"
+                                d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                            <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                        </svg>
+                        <div class="height-20px"></div>
+                        <h6 class="cardmain">Enrollment Capacity</h6>
+                    </div>
+
+                    <div class="mt-6rem">
+                        <h1 class="showFigure">3215</h1>
+                        <p class="cardSub">Total Enrollments</p>
+                    </div>
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+
+
+                </div>
+            </div>
+            <div class="p-0  col-12 col-sm-12 col-md-3">
+
+                <div class="card-trio">
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+                    <div class="card-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"
+                            style="enable-background:new 0 0 28 32" xml:space="preserve">
+                            <path fill="#b1cfed"
+                                d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                            <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                        </svg>
+                        <div class="height-20px"></div>
+                        <h6 class="cardmain">Enrollment Capacity</h6>
+                    </div>
+
+                    <div class="mt-6rem">
+                        <h1 class="showFigure">3215</h1>
+                        <p class="cardSub">Total Enrollments</p>
+                    </div>
+                    <div class="height-40px"></div>
+                    <div class="height-20px"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatis" style="position: relative;">
+        <div class="whatis__item whatis__skills-intelligence-employment-trends">
+            <div class="trendslogo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" style="enable-background:new 0 0 28 32"
+                    xml:space="preserve">
+                    <path fill="#b1cfed"
+                        d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                    <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                </svg>
+            </div>
+            <a class="whatis__link" href="/en/tools/skills-intelligence/trend-focus/employment-trends">
+                <strong>Employment trends</strong><br>
+                <i>Explore latest developments in job demand across countries, sectors, and occupations</i>
+            </a>
+        </div>
+
+        <div class="whatis__item whatis__skills-intelligence-technology">
+            <div class="trendslogo">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" style="enable-background:new 0 0 28 32"
+                    xml:space="preserve">
+                    <path fill="#b1cfed"
+                        d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                    <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                </svg>
+            </div>
+            <a class="whatis__link" href="/en/tools/skills-intelligence/trend-focus/digitalization-and-technology">
+                <strong>Digitalization and technology</strong><br>
+                <i>Explore how advanced technologies transform skills and jobs demand</i>
+            </a>
+        </div>
+
+        <div class="whatis__item whatis__skills-intelligence-future-jobs">
+            <div class="trendslogo">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" style="enable-background:new 0 0 28 32"
+                    xml:space="preserve">
+                    <path fill="#b1cfed"
+                        d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                    <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                </svg>
+            </div>
+            <a class="whatis__link" href="/en/tools/skills-intelligence/trend-focus/future-jobs">
+                <strong>Future jobs</strong><br>
+                <i>Explore unique set of indicators developed from Cedefop Skills forecast</i>
+            </a>
+        </div>
+
+        <div class="whatis__item whatis__skills-intelligence-learning">
+            <div class="trendslogo">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" style="enable-background:new 0 0 28 32"
+                    xml:space="preserve">
+                    <path fill="#b1cfed"
+                        d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                    <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                </svg>
+            </div>
+            <a class="whatis__link" href="/en/tools/skills-intelligence/trend-focus/skills-learning">
+                <strong>Skills and learning</strong><br>
+                <i>Explore Cedefop indicators on what is trending in learning provision and qualifications</i>
+            </a>
+        </div>
+
+        <div class="whatis__item whatis__skills-intelligence-workplace-trends">
+            <div class="trendslogo">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" style="enable-background:new 0 0 28 32"
+                    xml:space="preserve">
+                    <path fill="#b1cfed"
+                        d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                    <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                </svg>
+            </div>
+            <a class="whatis__link" href="/en/tools/skills-intelligence/trend-focus/workplace-trends">
+                <strong>Workplace trends</strong><br>
+                <i>Explore trends in workplace training, employment contracts, job turnover, wages and
+                    others</i>
+            </a>
+        </div>
+
+        <div class="whatis__item whatis__skills-intelligence-green-observatory">
+            <div class="trendslogo">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" style="enable-background:new 0 0 28 32"
+                    xml:space="preserve">
+                    <path fill="#b1cfed"
+                        d="M22.196 22.02 18 21.18v-1.281A5.009 5.009 0 0 0 22 15V1a1 1 0 0 0-1-1h-7C6.091 0 6 4.796 6 5v10a5.01 5.01 0 0 0 4 4.899v1.281l-4.196.84C3.796 22.421 0 24.396 0 29v2a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1v-2c0-4.604-3.796-6.579-5.804-6.98zm-3.727 1.293L15.52 27H15v-1.586l2.329-2.329 1.14.228zM12 20h4v1.586l-2 2-2-2V20zM8 5.018C8.004 4.895 8.18 2 14 2h6v6.674l-5.725-1.636a1.001 1.001 0 0 0-.982.254C12.174 8.412 9.625 8.833 8 8.957V5.018zM8 15v-4.036c1.548-.1 4.453-.473 6.246-1.853L20 10.754V15c0 1.654-1.346 3-3 3h-6c-1.654 0-3-1.346-3-3zm2.671 8.085L13 25.414V27h-.52l-2.949-3.687 1.14-.228zM2 29c0-4.098 4.028-4.984 4.196-5.02l1.127-.225 3.896 4.87A1 1 0 0 0 12 29h1v1H2v-1zm24 1H15v-1h1a1 1 0 0 0 .781-.375l3.896-4.87 1.127.225c.171.035 4.196.887 4.196 5.02v1z" />
+                    <path fill="#b1cfed" d="M13 12h2v3h-2z" />
+                </svg>
+            </div>
+            <a class="whatis__link" href="/en/tools/skills-intelligence/skills-online-job-advertisements">
+                <strong>Skills in online job advertisements</strong><br>
+                <i>Explore analyses on impact of green transition on jobs and skills</i>
+            </a>
+        </div>
+    </div>
+
+    <!-- End Main Section -->
+
+
+    <!-- Footer Widget-->
+    <div class="">
+        <!-- <div class="height-40px"></div>
+        <div class="height-40px"></div> -->
+
+        <div class="container2">
+            <div class="row">
+
+                <div class="card-shadow-footer col-md-4 col-12  pl-3 discalamer">
+                    <div class="height-40px"></div>
+                    <div class="height-40px"></div>
+                    <div class="pl-3 pr-3">
+                        <div class="d-flex align-items-center">
+
+                            <h3 class="yellow ">Disclaimer
+                            </h3>
+                            <div class="mt-3 ml-2" style="width:50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 25 25">
+                                    <path class="yellow"
+                                        d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                                        fill="#FFED00" />
+                                </svg></div>
+                        </div>
+                        <div class="height-40px"></div>
+                        <p class="text-light">This website has been developed with the assistance of the TVET Sector
+                            Support
+                            Programme,
+                            funded by the European Union, the Federal Republic of Germany and the Royal Norwegian
+                            Embassy. The Programme is implemented by the Deutsche Gesellschaft für Internationale
+                            Zusammenarbeit (GIZ) GmbH in close collaboration with the National Vocational and
+                            Technical Training Commission (NAVTTC) and a number of public and private sector
+                            organizations at the national and provincial/regional levels. The content of this
+                            website is the sole responsibility of the partner organization (s) and doesn't reflect
+                            the views of the TVET Sector Support Programme.</p>
+                        <div class="height-40px"></div>
+                        <div class="height-40px"></div>
+                    </div>
+
+                </div>
+
+                <div class="card-shadow-footer col-12 col-md-4 projects   footer-links">
+                    <div class="height-40px"></div>
+                    <div class="height-40px"></div>
+                    <div class="pl-3">
+
+                        <div class="d-flex align-items-center">
+
+                            <h3 class="yellow">Projects</h3>
+                            <div class="mt-2 ml-2" style="width:50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 25 25">
+                                    <path class="yellow"
+                                        d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                                        fill="#FFED00" />
+                                </svg></div>
+                        </div>
+                        <ul>
+                            <div class="height-40px"></div>
+                            <li class="text-light"><a class="text-light" href="{{route('activities')}}">Future
+                                    Studies</a></li>
+                            <div class="height-40px"></div>
+                            <div class="height-40px"></div>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="card-shadow-footer col-12 col-md-4 contactus contact-cont">
+                    <div class="height-40px"></div>
+                    <div class="height-40px"></div>
+                    <div class="pl-3 pr-3">
+
+                        <div class="d-flex align-items-center">
+                            <h3 class="yellow">Contact info</h3>
+                            <div class="mt-2 ml-2" style="width:50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 25 25">
+                                    <path class="yellow"
+                                        d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                                        fill="#FFED00" />
+                                </svg></div>
+                        </div>
+                        <div class="height-40px"></div>
+                        <p class="text-light">National Vocational & Technical Training Commission (NAVTTC).</p>
+                        <p class="pt-3 text-light">NAVTTC HQs., Plot No. 38 Kirthar Road, Sector H-9/4 Islamabad</p>
+                        <h6 class="pt-4 text-light"><i class="fa fa-phone"></i> 92-51-9044444 </h6>
+                        <h6 class="text-light"><i class="fa  text-light fa-envelope"></i> info@skillingpakistan.org
+                        </h6>
+                        <div class="social-icon">
+                            <ul>
+                                <li class="text-light"><a class="text-light"
+                                        href="https://www.facebook.com/skillingpakistan/"> <i
+                                            class="fa fa-facebook-f"></i>
+                                        Skilling Pakistan </a></li>
+
+                                <li class="text-light"><a style="color: white;" href="#">Login /</a><a
+                                        style="color: white;" href="#"> Register</a></li>
+
+                                <li class="text-light"><a class="text-light" href="#">Assesment / </a><a
+                                        class="text-light" href="#" onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();"
+                                        class="btn btn-default btn-flat"> Logout</a>
+                                    <form id="logout-form" action="#" method="POST" style="display: none;">
+                                    </form>
+                                </li>
+                                <li class="text-light"><a class="text-light" href="{#  #}>My
+                                            Account /</a><a style=" color: white; font-size:12px;" href="#" onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();"
+                                        class="btn btn-default btn-flat">Logout</a>
+                                    <form id="logout-form" action="#" method="POST" style="display: none;">
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Widget-->
+
+
+    <!-- Footer -->
+    <footer class="container-y px-5 pt-3 pb-5" style="background-color: #080852"
+        aria-label="Contact information, Newsletter subscribe, Follow on social, Site navigation, Site copyright, Privacy and accessibility information">
+        <div class="row align-items-center mb-2">
+
+            <div class="text-center w-100">
+                <div class="height-40px"></div>
+                <h2 class="text-light">Reform Partners</h2>
+                <div class="height-40px"></div>
+            </div>
+            <div class="col-12 d-flex justify-content-center logos">
+                <img src="./assets/assets_new/images/clint-logo-1.png" class="img-fluid">
+                <img src="./assets/assets_new/images/clint-logo-2.png" class="img-fluid">
+                <img src="./assets/assets_new/images/clint-logo-3.png" class="img-fluid">
+                <img src="./assets/assets_new/images/clint-logo-4.png" class="img-fluid">
+                <img src="./assets/assets_new/images/clint-logo-5.png" class="img-fluid">
+                <div class="height-40px"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+
+                <div class="height-40px"></div>
+                <ul class="d-flex flex-wrap list">
+                    <li><a class="" href="javascript:void()">Sitemap</a></li>
+                    <li><a href="javascript:void()">FAQs</a></li>
+                    <li><a href="javascript:void()">Cookies policy</a></li>
+                    <li><a href="javascript:void()">Privacy statement</a></li>
+                    <li><a href="javascript:void()">Accessibility statement</a></li>
+                    <li><a href="javascript:void()">Data protection</a></li>
+                    <li><a href="javascript:void()">Access to documents</a></li>
+                </ul>
+                <ul class="d-flex flex-wrap list">
+                    <li><a href="javascript:void()">Legal notice</a></li>
+                    <li><a href="https://www.navttc.org/">NAVTTC</a></li>
+                    <li><a href="http://www.tevta.gop.pk/">Punjab TEVTA</a></li>
+                    <li><a href="http://www.stevta.gos.pk/">Sindh TEVTA</a></li>
+                    <li><a href="http://kptevta.gov.pk/">KP TEVTA</a></li>
+                    <li><a href="#">Baluchistan TEVTA</a></li>
+                    <li><a href="#">AJK TEVTA</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer-->
+
+    </div>
+    </div>
+
+    <script src="./assets/bootstrap/js/jquery.js"></script>
+    <script src="./assets/bootstrap/js/topmenu.js"></script>
+
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="./assets/assets_new/bootstrap/js/slick.min.js"></script>
+    <script src="./assets//assets_new/bootstrap/js/slick.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const slider = $('.your-slider.center');
+            let isPlaying = true;
+
+            // Initialize Slick slider with center mode
+            slider.slick({
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 1,
+                dots: true,
+                infinite: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+
+            // Play/Pause button functionality
+            $('#play-pause-icon').on('click', function () {
+                if (isPlaying) {
+                    slider.slick('slickPause');
+                    $(this).text('▶'); // Play icon
+                } else {
+                    slider.slick('slickPlay');
+                    $(this).text('❚❚'); // Pause icon
+                }
+                isPlaying = !isPlaying;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $("#cssmenu").menumaker({
+            title: "Menu",
+            format: "multitoggle"
+        });
+
+        $("ul.nav-tabs a").click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 4,
+
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 1500,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+
+        $(document).ready(function () {
+            $('.graph-tab-slide').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 1500,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+
+        $(document).ready(function () {
+            $('.job-provider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 1500,
+                arrows: true,
+                dots: false,
+                swipeToSlide: false,
+                touchMove: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('.patners-logo').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 1500,
+                arrows: true,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+
+        $(document).ready(function () {
+            $('.news-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 1500,
+                arrows: true,
+                dots: true,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        });
+
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+
+            });
+        });
+
+        $(document).ready(function () {
+            $('.videos-slider').slick({
+                // slidesToShow: 1,
+                // slidesToScroll: 1,
+                // autoplay: false,
+                // autoplaySpeed: 1500,
+                arrows: true,
+                dots: true,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 991,
+                    settings: {
+                        // slidesToShow: 1
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        // slidesToShow: 1
+                    }
+                }]
+            });
+        });
+
+        function export_table_to_csv(tbl, filename) {
+            var csv = [];
+            // alert(tbl);
+            var rows = $(tbl).find('> tbody > tr');
+            //var rows =document.getElementById(id).find("tr");
+
+            for (var i = 0; i < rows.length; i++) {
+                var row = [],
+                    cols = rows[i].querySelectorAll("td, th");
+
+                for (var j = 0; j < cols.length; j++) {
+                    row.push(cols[j].innerText);
+                }
+                csv.push(row.join(","));
+            }
+
+            // Download CSV
+            download_csv(csv.join("\n"), filename);
+        }
+
+        function download_csv(csv, filename) {
+            var csvFile;
+            var downloadLink;
+
+            // CSV FILE
+            csvFile = new Blob([csv], {
+                type: "text/csv"
+            });
+
+            // Download link
+            downloadLink = document.createElement("a");
+
+            // File name
+            downloadLink.download = filename;
+
+            // We have to create a link to the file
+            downloadLink.href = window.URL.createObjectURL(csvFile);
+
+            // Make sure that the link is not displayed
+            downloadLink.style.display = "none";
+
+            // Add the link to your DOM
+            document.body.appendChild(downloadLink);
+
+            // Lanzamos
+            downloadLink.click();
+        }
+        function csv_gen(targetEl) {
+            export_table_to_csv(targetEl, targetEl.substr(1, targetEl.length) + ".csv");
+        }
+    </script>
+
+    <!-- Header Js-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ur',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+</body>
+
+</html>

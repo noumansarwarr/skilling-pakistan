@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Skilling Ocupation</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <link href="./assets/assets_new/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/assets_new/style.css" rel="stylesheet">
+    <link href="./assets/assets_new/occupation.css" rel="stylesheet">
+    <link href="./assets/assets_new/bootstrap/fonts/font-awesome.min.css" rel="stylesheet">
+
+
+    <link href="./assets/assets_new/header.css" rel="stylesheet">
+    <link href="./assets/assets_new/footer.css" rel="stylesheet">
+    <link href="./assets/assets_new/home.css" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/assets_new/bootstrap/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./assets/assets_new/bootstrap/css/slick.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body class="Occupation">
+    <!-- /.top-bar -->
+    <div class="top-bar">
+        <div class="container-fluid" style="width:90%">
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="font-size: 12px; padding-top:4px;"><i class="fa fa-home"></i> Plot No. 38 Kirthar
+                        Road, Sector H-9/4 Islamabad, Pakistan</p>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li style="font-size: 12px"><i class="fa fa-phone mr-1"></i> 92-51-9044444</li>
+                        <li style="font-size: 12px"><i class="fa fa-envelope mr-1"></i> info@navttc.gov.pk </li>
+                        <li><a style="color: white; font-size: 12px" href="#">Login/</a><a
+                                style="color: white; font-size:12px;" href="#">Register</a></li>
+
+                        <li><a style="color: white; font-size:12px" href="#">Assesment /</a><a
+                                style="color: white; font-size:12px;" href="#" onclick="event.preventDefault();
+                                                      document.getElementById('logout-form').submit();"
+                                class="btn btn-default btn-flat">Logout</a>
+                            <form id="logout-form" action="#" method="POST" style="display: none;">
+                            </form>
+                        </li>
+                        <li><a style="color: white; font-size:12px" href="#">My
+                                Account /</a><a style="color: white; font-size:12px;" href="#" onclick="event.preventDefault();
+                                                      document.getElementById('logout-form').submit();"
+                                class="btn btn-default btn-flat">Logout</a>
+                            <form id="logout-form" action="#" method="POST" style="display: none;">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Topbar-->
+
+
+    <!-- /header-section -->
+    <div class="container-y py-4 px-5 d-flex justify-content-between" style="background-color: #4B62BE">
+        <img style="height:80px;" src="./assets/images/nsis-logo-white.png" class="img-fluid">
+        <div id="translate-container">
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item pt-3 text-center w-10  active">
+                    <a href="#" class="nav-link d-flex flex-column align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#4B62BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-home mb-1">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="nav-item pt-3 text-center w-10">
+                    <a href="#" class="nav-link d-flex flex-column align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#4B62BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-users">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                        </svg>
+                        <span>About us</span>
+                    </a>
+                </li>
+                <li class="nav-item pt-3 text-center w-10"><a href="#"
+                        class="nav-link d-flex flex-column align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#4B62BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-building-bank">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l18 0" />
+                            <path d="M3 10l18 0" />
+                            <path d="M5 6l7 -3l7 3" />
+                            <path d="M4 10l0 11" />
+                            <path d="M20 10l0 11" />
+                            <path d="M8 14l0 3" />
+                            <path d="M12 14l0 3" />
+                            <path d="M16 14l0 3" />
+                        </svg>
+                        <span>Institutes</span>
+                    </a>
+                </li>
+
+                <li class="nav-item pt-3 dropdown text-center w-10">
+                    <a class="nav-link d-flex align-items-end justify-content-center" href="#"
+                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="d-flex flex-column align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                                fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-user-square">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 10a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                <path d="M6 21v-1a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v1" />
+                                <path
+                                    d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+                            </svg>
+                            <span>Employer</span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#4B62BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 9l6 6l6 -6" />
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">National</a>
+                        <a class="dropdown-item" href="#">Islamabad</a>
+                        <a class="dropdown-item" href="#">Punjab</a>
+                        <a class="dropdown-item" href="#">Sindh</a>
+                        <a class="dropdown-item" href="#">Khyber
+                            Pakhtunkhwa</a>
+                        <a class="dropdown-item" href="#">Balochistan</a>
+                        <a class="dropdown-item" href="#">Gilgit
+                            Baltistan</a>
+                        <a class="dropdown-item" href="#">Azad Jammu
+                            Kashmir</a>
+                    </div>
+                </li>
+
+                <li class="nav-item pt-3 text-center w-10"><a href="#"
+                        class="nav-link d-flex flex-column align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#4B62BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-list-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M15 15m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M18.5 18.5l2.5 2.5" />
+                            <path d="M4 6h16" />
+                            <path d="M4 12h4" />
+                            <path d="M4 18h4" />
+                        </svg>
+                        <span>Jobs</span>
+                    </a>
+                </li>
+                <li class="nav-item pt-3 text-center w-10">
+                    <a href="#" class="nav-link d-flex flex-column align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#4B62BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-phone-call">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            <path d="M15 7a2 2 0 0 1 2 2" />
+                            <path d="M15 3a6 6 0 0 1 6 6" />
+                        </svg>
+                        <span>Contact us</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Header -->
+    <!-- Browse by Occupation -->
+    <div class="Browse">
+        <div class="height-20px"></div>
+
+
+        <div class="d-flex align-items-center">
+            <img class="d-none d-md-block" src="assets/images/browse-logo.png" alt="" />
+            <h1 class="text-light" className="BrowseTitle">Browse by Occupation</h1>
+            <div class="height-20px"></div>
+
+        </div>
+        <div class="height-20px"></div>
+        <p class="Browse_para pr-5">
+            Occupation is a set of jobs with similar tasks and duties as well as qualification and skills
+            requirements.
+            Information provided on occupations within the Skills intelligence is structured on the basis of ISCO-08
+            classification. The information can be accessed through dashboards on a broad occupational level (such
+            as
+            Professionals), or on a more detailed occupational level (such as Health Professionals).
+        </p>
+        <div class="height-20px"></div>
+        <p class="Browse_para pr-5">
+
+            Occupation dashboards contain a description as well as key facts and indicators relevant to particular
+            occupation. Dashboards also offer links to other indicators relevant to skills, jobs and the labour
+            market,
+            as well as links to qualitative information on the occupation (data insights or blog articles).
+        </p>
+
+        <div class="height-40px"></div>
+    </div>
+    <!-- Browse by Occupation -->
+    <!-- Filters -->
+    <div class="filters pl-3 pr-3">
+        <div class="height-20px"></div>
+        <h2 class="filtersTitle">Filters</h2>
+        <div class="height-20px"></div>
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="form-group occupationSide">
+                    <label for="exampleFormControlSelect1 " class="OccupationTitle">Occupations</label>
+                    <select class="form-control OccupationSel" id="exampleFormControlSelect1">
+                        <option>Accounting Clerk</option>
+                        <option>OfficeDesk</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="form-group occupationSide">
+                    <label for="exampleFormControlSelect1 " class="OccupationTitle">Countries</label>
+                    <select class="form-control OccupationSel" id="exampleFormControlSelect1">
+                        <option>Pakistan</option>
+                        <option>India</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Office clerks -->
+            <div class="container">
+                <div class="height-40px"></div>
+                <div class="row">
+                    <div class="col-12 officeClerk">
+                        <div class="height-20px"></div>
+                        <div class="d-flex align-items-start">
+                            <img class="d-none d-md-block" src="assets/images/blub.png" alt="" />
+                            <div class="d-flex align-items-baseline">
+
+                                <img class="d-none d-md-block" src="assets/images/withBlub.png" class="img-fluid"
+                                    alt="" />
+                                <div>
+
+
+                                    <h2 class="ml-2">Office clerks</h2>
+
+                                    <div class="height-20px"></div>
+                                    <p class="clerkText">
+                                        Office clerks carry out a range of clerical and administrative activities
+                                        related to
+                                        recording, organising, storing and retrieving information; compiling accounting,
+                                        bookkeeping, financial and other numerical data; and sorting and delivering
+                                        mail,
+                                        filing
+                                        documents, preparing information for processing, maintaining personnel records,
+                                        etc.
+                                        The
+                                        types of job undertaken by office clerks includes: secretaries, typists and data
+                                        entry
+                                        clerks, accounting and bookkeeping clerks, payroll clerks, mail carriers and
+                                        sorting
+                                        clerks,
+                                        scribes, filing and copying clerks, and personnel clerks.
+                                    </p>
+                                    <div class="height-20px"></div>
+
+                                    <p class="clerkText">
+
+                                        They usually need to have completed the first-stage of secondary education but
+                                        in
+                                        some
+                                        instances they will need to have completed the second-stage of secondary
+                                        education,
+                                        perhaps
+                                        by undertaking specialised vocational education and training. Read more about
+                                        this
+                                        occupation in our Article.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Office clerks -->
+
+            </div>
+
+
+
+        </div>
+        <!-- Filters -->
+
+        <!-- Key facts -->
+        <div class="pl-3 pr-3">
+            <div class="height-20px"></div>
+            <h2 class="filtersTitle">Key facts
+            </h2>
+            <div class="height-20px"></div>
+
+            <div class="row gap-4">
+                <div class="col-12 col-sm-12 col-md-7 mr-5 ">
+                    <div class="row box-shadow-web ">
+                        <div class="col-12 col-sm-12 col-md-6 keyfactsStat position-relative">
+                            <div class="position-absolute end-0" style="right: 10px;top:1rem">
+
+                                <img src="assets/images/withBlub.png" class="img-fluid" alt="" />
+                            </div>
+
+                            <div style="flex-direction: column;"
+                                class="d-flex justify-content-center align-items-center">
+                                <div class="height-40px"></div>
+                                <div class="height-40px"></div>
+                                <img src="assets/images/totalEmployment.png" class="img-fluid" alt="" />
+                                <p>Total employment
+                                </p>
+                                <div class="height-40px"></div>
+                                <div class="height-40px"></div>
+                                <div class="height-40px"></div>
+                            </div>
+                            
+                            <h1 class="showFigure">3215</h1>
+                            <p class="cardSub">in 2022 in Belgium</p>
+                            <div class="height-40px"></div>
+                        </div>
+                        <div class="pl-0 col-12 col-sm-12 col-md-6 bg-white position-relative">
+                            <div class="position-absolute end-0" style="right: 10px;top:1rem">
+                                
+                                <img src="assets/images/withBlub.png" class="img-fluid" alt="" />
+                            </div>
+                            <div style="flex-direction: column;"
+                            class="d-flex justify-content-center align-items-center">
+                            <div class="height-40px"></div>
+                            <div class="height-40px"></div>
+                            <img src="assets/images/totalEmployment.png" class="img-fluid" alt="" />
+                            <p class="mt-3">Total employment
+                            </p>
+                            <div class="height-40px"></div>
+                            <div class="height-40px"></div>
+                            <div class="height-40px"></div>
+                        </div>
+                        
+                        <h1 class="showFigure">3215</h1>
+                        <p class="cardSub">in 2022 in Belgium</p>
+                        <div class="height-40px"></div>
+                        <div class="height-40px"></div>
+                        </div>
+
+                    </div>
+                    <!-- Chart -->
+                    <div>
+                        <div class="height-40px"></div>
+
+                        <h2 class="filtersTitle">Charts
+                        </h2>
+                        <div class="height-40px"></div>
+                        <div class="box-shadow-web bg-white p-5">
+                            <h3 class="chartTitle">Future job prospects of the occupation of Office clerks in Belgium
+                                compared to EU27 in
+                                2022-2035</h3>
+                            <img src="assets/images/chart.png" alt="" />
+                            <div class="height-20px"></div>
+                            <div class="wrapSubinfo">
+                                <p class="chartsubTitle">Comparing Future job prospects for Office clerks over the
+                                    period 2022-2035, EU27 is
+                                    on the lead with 41 while Belgium follows with 20.</p>
+                                <div class="height-20px"></div>
+                                <div class="dataSet">
+                                    <p>Dataset:</p>
+                                    <a href="">Cedefop Skills Forecast</a>
+                                </div>
+                                <div class="dataSet">
+                                    <p>Source:</p>
+                                    <a href="">Cedefop</a>
+                                </div>
+                                <div class="dataSet">
+
+                                    <p>Indicator:</p>
+                                    <a href="">Future job prospects</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="height-40px"></div>
+
+                        <h2 class="filtersTitle">Charts
+                        </h2>
+                        <div class="height-40px"></div>
+                        <div class="box-shadow-web bg-white p-5">
+                            <h3 class="chartTitle">Future job prospects of the occupation of Office clerks in Belgium
+                                compared to EU27 in
+                                2022-2035</h3>
+                            <img src="assets/images/chart.png" alt="" />
+                            <div class="height-20px"></div>
+                            <div class="wrapSubinfo">
+                                <p class="chartsubTitle">Comparing Future job prospects for Office clerks over the
+                                    period 2022-2035, EU27 is
+                                    on the lead with 41 while Belgium follows with 20.</p>
+                                <div class="height-20px"></div>
+                                <div class="dataSet">
+                                    <p>Dataset:</p>
+                                    <a href="">Cedefop Skills Forecast</a>
+                                </div>
+                                <div class="dataSet">
+                                    <p>Source:</p>
+                                    <a href="">Cedefop</a>
+                                </div>
+                                <div class="dataSet">
+
+                                    <p>Indicator:</p>
+                                    <a href="">Future job prospects</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="height-40px"></div>
+
+                        <h2 class="filtersTitle">Charts
+                        </h2>
+                        <div class="height-40px"></div>
+                        <div class="box-shadow-web bg-white p-5">
+                            <h3 class="chartTitle">Future job prospects of the occupation of Office clerks in Belgium
+                                compared to EU27 in
+                                2022-2035</h3>
+                            <img src="assets/images/chart.png" alt="" />
+                            <div class="height-20px"></div>
+                            <div class="wrapSubinfo">
+                                <p class="chartsubTitle">Comparing Future job prospects for Office clerks over the
+                                    period 2022-2035, EU27 is
+                                    on the lead with 41 while Belgium follows with 20.</p>
+                                <div class="height-20px"></div>
+                                <div class="dataSet">
+                                    <p>Dataset:</p>
+                                    <a href="">Cedefop Skills Forecast</a>
+                                </div>
+                                <div class="dataSet">
+                                    <p>Source:</p>
+                                    <a href="">Cedefop</a>
+                                </div>
+                                <div class="dataSet">
+
+                                    <p>Indicator:</p>
+                                    <a href="">Future job prospects</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="height-40px"></div>
+
+                        <h2 class="filtersTitle">Charts
+                        </h2>
+                        <div class="height-40px"></div>
+                        <div class="box-shadow-web bg-white p-5">
+                            <h3 class="chartTitle">Future job prospects of the occupation of Office clerks in Belgium
+                                compared to EU27 in
+                                2022-2035</h3>
+                            <img src="assets/images/chart.png" alt="" />
+                            <div class="height-20px"></div>
+                            <div class="wrapSubinfo">
+                                <p class="chartsubTitle">Comparing Future job prospects for Office clerks over the
+                                    period 2022-2035, EU27 is
+                                    on the lead with 41 while Belgium follows with 20.</p>
+                                <div class="height-20px"></div>
+                                <div class="dataSet">
+                                    <p>Dataset:</p>
+                                    <a href="">Cedefop Skills Forecast</a>
+                                </div>
+                                <div class="dataSet">
+                                    <p>Source:</p>
+                                    <a href="">Cedefop</a>
+                                </div>
+                                <div class="dataSet">
+
+                                    <p>Indicator:</p>
+                                    <a href="">Future job prospects</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="height-40px"></div>
+
+                        <h2 class="filtersTitle">Charts
+                        </h2>
+                        <div class="height-40px"></div>
+                        <div class="box-shadow-web bg-white p-5">
+                            <h3 class="chartTitle">Future job prospects of the occupation of Office clerks in Belgium
+                                compared to EU27 in
+                                2022-2035</h3>
+                            <img src="assets/images/chart.png" alt="" />
+                            <div class="height-20px"></div>
+                            <div class="wrapSubinfo">
+                                <p class="chartsubTitle">Comparing Future job prospects for Office clerks over the
+                                    period 2022-2035, EU27 is
+                                    on the lead with 41 while Belgium follows with 20.</p>
+                                <div class="height-20px"></div>
+                                <div class="dataSet">
+                                    <p>Dataset:</p>
+                                    <a href="">Cedefop Skills Forecast</a>
+                                </div>
+                                <div class="dataSet">
+                                    <p>Source:</p>
+                                    <a href="">Cedefop</a>
+                                </div>
+                                <div class="dataSet">
+
+                                    <p>Indicator:</p>
+                                    <a href="">Future job prospects</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chart -->
+                </div>
+                <div class="col-12 col-sm-12 col-md-4  ">
+                    <div class="bg-white box-shadow-web p-5">
+                        <div class="height-20px"></div>
+                        <h2 class="filtersTitle">Belgian</h2>
+                        <div class="height-40px"></div>
+                        <p class="BelText">The Belgian economy is an export-driven one. Important sectors in Belgium’s
+                            economy include
+                            trade; transport and accommodation/food­ services; industry and public administration. The
+                            Brussels region, headquarters of many international organizations, has a greater focus on
+                            financial and administrative services and its workforce comprises people with higher
+                            qualifications and good linguistic skills. Wallonia and Flanders are more dependent on
+                            industry,
+                            and in particular the production of intermediate goods traded in the global markets.
+
+                        </p>
+                        <div class="height-20px"></div>
+                        <p class="BelText">
+                            Employment in Belgium regained its pre-2008 financial crisis level in 2014 and is expected
+                            to
+                            continue to grow strongly till 2030. Belgium’s working-age population (15-64) is also
+                            projected
+                            to grow in this period, with labour market participation slightly decreasing. Most
+                            employment
+                            growth in Belgium will be in health & social care, followed by professional services. The
+                            occupations with most new job openings between 2020-2030 will be legal & social associate
+                            professionals and office associate professionals. Till 2030, more than half of all job
+                            openings
+                            (including replacements for vacated jobs) in Belgium will be for high level qualifications.
+
+
+                        </p>
+                        <div class="height-40px"></div>
+
+                    </div>
+                    <div class="height-40px"></div>
+                    <div class="featuredIndicator">
+
+                        <p>Featured indicator</p>
+                        <div class="height-20px"></div>
+
+                        <div class="d-flex align-items-center">
+                            <img src="assets/images/currency.png" alt="" />
+                            <a href="">Skills in online job advertisements</a>
+                        </div>
+                    </div>
+                    <div class="height-40px"></div>
+
+                    <div class="bg-white box-shadow-web p-5">
+                        <div class="height-20px"></div>
+                        <h2 class="filtersTitle">Data insights
+                        </h2>
+                        <div class="height-40px"></div>
+                        <a class="dataSightref" href="">Office clerks: skills opportunities and challenges (2023
+                            update)</a>
+                        <div class="height-20px"></div>
+                        <p class="BelText">The Belgian economy is an export-driven one. Important sectors in Belgium’s
+                            economy include
+                            trade; transport and accommodation/food­ services; industry and public administration. The
+                            Brussels region, headquarters of many international organizations, has a greater focus on
+                            financial and administrative services and its workforce comprises people with higher
+                            qualifications and good linguistic skills. Wallonia and Flanders are more dependent on
+                            industry,
+                            and in particular the production of intermediate goods traded in the global markets.
+
+                        </p>
+                        <div class="height-20px"></div>
+                        <p class="BelText">
+                            Employment in Belgium regained its pre-2008 financial crisis level in 2014 and is expected
+                            to
+                            continue to grow strongly till 2030. Belgium’s working-age population (15-64) is also
+                            projected
+                            to grow in this period, with labour market participation slightly decreasing. Most
+                            employment
+                            growth in Belgium will be in health & social care, followed by professional services. The
+                            occupations with most new job openings between 2020-2030 will be legal & social associate
+                            professionals and office associate professionals. Till 2030, more than half of all job
+                            openings
+                            (including replacements for vacated jobs) in Belgium will be for high level qualifications.
+
+
+                        </p>
+                        <div class="height-40px"></div>
+
+                    </div>
+                    <div class="height-40px"></div>
+
+                    <div class="bg-white box-shadow-web p-5">
+                        <div class="height-20px"></div>
+                        <h2 class="filtersTitle">Blog article
+                        </h2>
+                        <div class="height-40px"></div>
+                        <a class="dataSightref" href="">Office clerks: skills opportunities and challenges (2023
+                            update)</a>
+                        <div class="height-20px"></div>
+                        <p class="BelText">The Belgian economy is an export-driven one. Important sectors in Belgium’s
+                            economy include
+                            trade; transport and accommodation/food­ services; industry and public administration. The
+                            Brussels region, headquarters of many international organizations, has a greater focus on
+                            financial and administrative services and its workforce comprises people with higher
+                            qualifications and good linguistic skills. Wallonia and Flanders are more dependent on
+                            industry,
+                            and in particular the production of intermediate goods traded in the global markets.
+
+                        </p>
+                        <div class="height-20px"></div>
+                        <p class="BelText">
+                            Employment in Belgium regained its pre-2008 financial crisis level in 2014 and is expected
+                            to
+                            continue to grow strongly till 2030. Belgium’s working-age population (15-64) is also
+                            projected
+                            to grow in this period, with labour market participation slightly decreasing. Most
+                            employment
+                            growth in Belgium will be in health & social care, followed by professional services. The
+                            occupations with most new job openings between 2020-2030 will be legal & social associate
+                            professionals and office associate professionals. Till 2030, more than half of all job
+                            openings
+                            (including replacements for vacated jobs) in Belgium will be for high level qualifications.
+
+
+                        </p>
+                        <div class="height-40px"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Key facts -->
+        <!-- You might also be interested in -->
+        <div class="pl-3">
+
+            <div class="height-40px"></div>
+            <h3 class="interestIn">You might also be interested in</h3>
+
+            <div class="height-40px"></div>
+            <div class="row gap-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <div class="interestCard">
+
+                            <img class="card-img-top img-fluid" style="height: inherit;"
+                                src="assets/images/adobestock_421019853.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <button class="cardDashbtn">Dashboards</button>
+                            <div class="height-20px"></div>
+                            <p class="card-date">
+                                23 Feb 2024
+                            </p>
+                            <div class="height-20px"></div>
+                            <h5 class="card-title">Browse by country</h5>
+                            <p class="card-text">You will find here all the information availabl</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <div class="interestCard">
+
+                            <img class="card-img-top img-fluid" style="height: inherit;"
+                                src="assets/images/adobestock_421019853.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <button class="cardDashbtn">Dashboards</button>
+                            <div class="height-20px"></div>
+                            <p class="card-date">
+                                23 Feb 2024
+                            </p>
+                            <div class="height-20px"></div>
+                            <h5 class="card-title">Browse by country</h5>
+                            <p class="card-text">You will find here all the information availabl</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <div class="interestCard">
+
+                            <img class="card-img-top img-fluid" style="height: inherit;"
+                                src="assets/images/adobestock_421019853.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <button class="cardDashbtn">Dashboards</button>
+                            <div class="height-20px"></div>
+                            <p class="card-date">
+                                23 Feb 2024
+                            </p>
+                            <div class="height-20px"></div>
+                            <h5 class="card-title">Browse by country</h5>
+                            <p class="card-text">You will find here all the information availabl</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card" style="width: 100%;">
+                        <div class="interestCard">
+
+                            <img class="card-img-top img-fluid" style="height: inherit;"
+                                src="assets/images/adobestock_421019853.jpeg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <button class="cardDashbtn">Dashboards</button>
+                            <div class="height-20px"></div>
+                            <p class="card-date">
+                                23 Feb 2024
+                            </p>
+                            <div class="height-20px"></div>
+                            <h5 class="card-title">Browse by country</h5>
+                            <p class="card-text">You will find here all the information availabl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- You might also be interested in -->
+
+</body>
+
+</html>

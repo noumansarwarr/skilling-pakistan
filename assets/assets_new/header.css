@@ -1,0 +1,72 @@
+#translate-container .goog-te-gadget-simple {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+#translate-container .goog-te-menu-value {
+    display: none;
+}
+
+#google_translate_element .goog-te-combo {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+#google_translate_element .goog-te-combo:focus {
+    outline: none;
+}
+
+.nav-link {
+    color: #2F4798 !important;
+}
+
+.nav-link:hover {
+    background-color: #2F4798;
+    color: #fefefe !important;
+}
+
+.nav-link:hover svg {
+    stroke: #fefefe !important;
+}
+
+.active {
+    background-color: #2F4798;
+}
+
+.active .nav-link {
+    color: #fefefe !important;
+}
+
+.active svg {
+    stroke: #fefefe !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+}
+
+.dropdown-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dropdown-item:hover {
+    color: #fefefe !important;
+    background-color: #2F4798;
+}
+
+.logos img {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}

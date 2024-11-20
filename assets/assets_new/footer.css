@@ -1,0 +1,58 @@
+P.list {
+  color: #fefefe;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.list {
+}
+
+.list > li {
+  position: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+  list-style-type: none;
+}
+
+.list li::after {
+  content: "|";
+  color: #fefefe;
+  position: absolute;
+  right: -5px;
+}
+
+.list li:last-child::after {
+  content: "";
+}
+
+.list a {
+  color: #fefefe;
+  text-decoration: none;
+  white-space: nonwrap;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+.card-shadow-footer {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.discalamer {
+  background-color: #1b2a67;
+  line-height: 2.1rem;
+}
+.projects {
+  background-color: #26377e;
+  line-height: 2.1rem;
+}
+.contactus {
+  background-color: #263988;
+  line-height: 2.1rem;
+}
+.yellow {
+  color: #ffed00;
+}
+
+.contact-cont > p {
+  color: white;
+}

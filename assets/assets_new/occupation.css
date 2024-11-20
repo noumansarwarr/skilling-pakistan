@@ -1,0 +1,153 @@
+.Occupation {
+  background-color: #fbfaf8;
+}
+.Browse {
+  background-color: var(--secondary-background);
+  padding-left: 3rem;
+}
+.Browse_para {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.filtersTitle {
+  /* padding-left: 3rem; */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+.OccupationTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #0a0a0a;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.occupationSide {
+  background-color: white;
+  margin-left: 1rem;
+}
+
+.OccupationSel {
+  border: none;
+  padding: 5px 15px 5px 15px;
+  height: 2rem !important;
+}
+
+.officeClerk {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+}
+
+.clerkText {
+  color: #323232;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+.keyfactsStat {
+  background-color: var(--secondary-light-blue-background);
+  padding: 2rem;
+}
+.keyfactsStat2 {
+  background-color: white;
+}
+
+.BelText {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.featuredIndicator {
+  background-color: var(--secondary-background);
+  padding: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: white;
+}
+
+.featuredIndicator > p {
+  font-size: 1.5rem;
+}
+
+.featuredIndicator > div > a {
+  line-height: 22px;
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+}
+
+.dataSightref {
+  line-height: inherit;
+  color: var(--base-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chartTitle {
+  font-size: 1.25rem;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 600;
+}
+.chartsubTitle {
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.dataSet {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wrapSubinfo {
+  border: 2px solid #d1d1d1;
+  padding: 2rem;
+}
+
+.interestIn {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary-dark-blue-background);
+}
+
+.cardDashbtn {
+  background-color: #ffed00;
+  text-transform: uppercase;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+
+.card-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.card-title {
+  color: var(--secondary-dark-blue-background);
+  font-weight: 600;
+}
+
+.interestCard {
+  height: 260px;
+}
+.BrowseTitle {
+  font-size: 3rem;
+}
+@media screen and (max-width: 900px) {
+    .BrowseTitle {
+      font-size: 1.8rem;
+    }
+}
+.BrowseTitle {
+  font-size: 3rem;
+}

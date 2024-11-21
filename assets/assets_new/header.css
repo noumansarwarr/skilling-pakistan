@@ -70,3 +70,13 @@
     aspect-ratio: 3/2;
     object-fit: contain;
 }
+@media screen and (max-width:991px) {
+    .w-10 {
+    width: 100% !important;
+}
+
+    
+}
+.moveDown{
+transform: translateY(20px);
+}

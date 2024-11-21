@@ -491,13 +491,5 @@ padding-bottom: 30px;
   left: 15px;
 }
 
-.cardOnCaurosal {
-  margin-top: -5rem;
-}
 
-@media screen and (max-width: 900px) {
-  .cardOnCaurosal {
-    margin-top: 2rem;
-  }
-  
-}
+

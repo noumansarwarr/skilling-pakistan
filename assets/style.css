@@ -1960,3 +1960,113 @@ html {
 .navbar-nav {
   height: 6rem;
 }
+
+.show {
+  height: 37rem;
+  /* background-color: white; */
+  width: 100%;
+}
+
+.carousel-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.slick-carousel .row {
+  display: flex;
+  align-items: center;
+}
+
+.slick-carousel img {
+  border-radius: 8px;
+}
+
+.slick-carousel .col-12 {
+  padding: 10px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.thumbnails img.active {
+  border: 2px solid #ffed00;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.thumbnail-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* Hide scrollbar on Firefox */
+}
+
+.thumbnails::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar on Chrome, Safari, and Edge */
+}
+
+.thumbnails img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  .slick-active {
+    height: 40rem;
+  }
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: black;
+  border-radius: 100%;
+}
+
+.slick-dots {
+  text-align: end !important;
+}
+
+.comming-caurosal {
+  filter: brightness(0.5);
+}

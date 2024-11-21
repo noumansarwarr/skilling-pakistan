@@ -12,7 +12,6 @@
     <meta name="csrf-token" content="">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-
     <link href="./assets/assets_new/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/assets_new/style.css" rel="stylesheet">
     <link href="./assets/assets_new/bootstrap/fonts/font-awesome.min.css" rel="stylesheet">
@@ -79,10 +78,14 @@
                     <div id="google_translate_element"></div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <nav class="navbar  navbar-expand-lg navbar-light bg-light p-0">
+                <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav w-100 justify-content-around">
-                        <li class="nav-item pt-3 text-center w-10  active">
+                        <li class="nav-item   text-center w-10  active">
                             <a href="#" class="nav-link d-flex flex-column align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                     fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
@@ -97,8 +100,8 @@
                             </a>
                         </li>
 
-                        <li class="nav-item pt-3 text-center w-10">
-                            <a href="#" class="nav-link d-flex flex-column align-items-center">
+                        <li class="nav-item  text-center w-10">
+                            <a href="#" class="nav-link pt-3 d-flex flex-column align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                     fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -112,7 +115,7 @@
                                 <span>About us</span>
                             </a>
                         </li>
-                        <li class="nav-item pt-3 text-center w-10"><a href="#"
+                        <li class="nav-item  text-center w-10"><a href="#"
                                 class="nav-link d-flex flex-column align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
                                     fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
@@ -132,7 +135,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item pt-3 dropdown text-center w-10">
+                        <li class="nav-item  dropdown text-center w-10">
                             <a class="nav-link d-flex align-items-end justify-content-center" href="#"
                                 id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
@@ -172,7 +175,7 @@
                             </div>
                         </li>
 
-                        <li class="nav-item pt-3 text-center w-10"><a href="#"
+                        <li class="nav-item  text-center w-10"><a href="#"
                                 class="nav-link d-flex flex-column align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
@@ -188,7 +191,7 @@
                                 <span>Jobs</span>
                             </a>
                         </li>
-                        <li class="nav-item pt-3 text-center w-10">
+                        <li class="nav-item  text-center w-10">
                             <a href="#" class="nav-link d-flex flex-column align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="#4B62BE" stroke-width="2" stroke-linecap="round"
@@ -210,85 +213,62 @@
 
 
             <!-- Main Section-->
-            <div class="slider-container" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-                <div class="your-slider center">
-                    <div class="slide" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-                        <div class="slide-content">
-                            <div class="row p-5 ">
-
-                                <div class="col-12 col-sm-12 col-md-6">
-
-                                    <img class="img-fluid w-100" src="assets/images/adobestock_421019853.jpeg"
-                                        alt="Slide 1">
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-
-                                    <h3>New Series of Insights</h3>
-                                    <p>We developed six new thematic dashboards that look at trends in employment and
-                                        skills from various angles, such as digitalisation and technology, future
-                                        trends, or job demand in online job postings. Access the new dashboards from the
-                                        menu above, or the tiles below.
-
-                                    </p>
-                                    <a href="#" class="btn">Learn More</a>
-
-                                </div>
-                            </div>
+            <div class="carousel-container">
+                <!-- Main Carousel -->
+                <div class="slick-carousel">
+                    <div class="row p-5">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <img class="img-fluid w-100" src="assets/images/adobestock_421019853 (1).jpeg"
+                                alt="Slide 1">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <h3>New Series of Insights</h3>
+                            <p>We developed six new thematic dashboards that look at trends in employment and skills
+                                from
+                                various angles, such as digitalisation and technology, future trends, or job demand in
+                                online
+                                job postings. Access the new dashboards from the menu above, or the tiles below.
+                            </p>
+                            <a href="#" class="btn">Learn More</a>
                         </div>
                     </div>
-
-                    <div class="slide" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-                        <div class="slide-content">
-                            <div class="row p-5 ">
-
-                                <div class="col-12 col-sm-12 col-md-6">
-
-                                    <img class="img-fluid w-100" src="assets/images/adobestock_421019853.jpeg"
-                                        alt="Slide 1">
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-
-                                    <h3>New Series of Insights</h3>
-                                    <p>We developed six new thematic dashboards that look at trends in employment and
-                                        skills from various angles, such as digitalisation and technology, future
-                                        trends, or job demand in online job postings. Access the new dashboards from the
-                                        menu above, or the tiles below.
-
-                                    </p>
-                                    <a href="#" class="btn">Learn More</a>
-
-                                </div>
-                            </div>
+                    <div class="row p-5">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <img class="img-fluid w-100" src="assets/images/download (1).jfif" alt="Slide 2">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <h3>Explore Our Data</h3>
+                            <p>Discover trends and insights through our interactive dashboards, enabling you to make
+                                informed
+                                decisions based on real-time data and analysis.</p>
+                            <a href="#" class="btn">Discover More</a>
                         </div>
                     </div>
-
-                    <div class="slide" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
-                        <div class="slide-content">
-                            <div class="row p-5 ">
-
-                                <div class="col-12 col-sm-12 col-md-6">
-
-                                    <img class="img-fluid w-100" src="assets/images/adobestock_421019853.jpeg"
-                                        alt="Slide 1">
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-6">
-
-                                    <h3>New Series of Insights</h3>
-                                    <p>We developed six new thematic dashboards that look at trends in employment and
-                                        skills from various angles, such as digitalisation and technology, future
-                                        trends, or job demand in online job postings. Access the new dashboards from the
-                                        menu above, or the tiles below.
-
-                                    </p>
-                                    <a href="#" class="btn">Learn More</a>
-
-                                </div>
-                            </div>
+                    <div class="row p-5">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <img class="img-fluid w-100" src="assets/images/download (2).jfif" alt="Slide 3">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <h3>Future Trends</h3>
+                            <p>Stay ahead of the curve by exploring projections and insights into future workforce and
+                                skill
+                                requirements across industries.</p>
+                            <a href="#" class="btn">See Trends</a>
                         </div>
                     </div>
-
                 </div>
-                <div class="play-pause-btn" id="play-pause-icon">❚❚</div>
+
+                <!-- Thumbnails -->
+                <div class="thumbnail-container">
+                    <div class="thumbnails">
+                        <img src="assets/images/adobestock_421019853 (1).jpeg" alt="Thumbnail 1" data-index="0">
+                        <img src="assets/images/download (1).jfif" alt="Thumbnail 2" data-index="1">
+                        <img src="assets/images/download (2).jfif" alt="Thumbnail 3" data-index="2">
+                        <img src="assets/images/download (2).jfif" alt="Thumbnail 4" data-index="3">
+                        <img src="assets/images/download (2).jfif" alt="Thumbnail 5" data-index="4">
+                        <img src="assets/images/download (2).jfif" alt="Thumbnail 6" data-index="5">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -511,10 +491,9 @@
         <div class="height-40px"></div> -->
 
         <div class="container2">
-            <div class="row">
+            <div class="row position-relative">
 
                 <div class="card-shadow-footer col-md-4 col-12  pl-3 discalamer">
-                    <div class="height-40px"></div>
                     <div class="height-40px"></div>
                     <div class="pl-3 pr-3">
                         <div class="d-flex align-items-center">
@@ -528,7 +507,6 @@
                                         fill="#FFED00" />
                                 </svg></div>
                         </div>
-                        <div class="height-40px"></div>
                         <p class="text-light">This website has been developed with the assistance of the TVET Sector
                             Support
                             Programme,
@@ -540,13 +518,12 @@
                             website is the sole responsibility of the partner organization (s) and doesn't reflect
                             the views of the TVET Sector Support Programme.</p>
                         <div class="height-40px"></div>
-                        <div class="height-40px"></div>
+                        <!-- <div class="height-40px"></div> -->
                     </div>
 
                 </div>
 
                 <div class="card-shadow-footer col-12 col-md-4 projects   footer-links">
-                    <div class="height-40px"></div>
                     <div class="height-40px"></div>
                     <div class="pl-3">
 
@@ -561,17 +538,14 @@
                                 </svg></div>
                         </div>
                         <ul>
-                            <div class="height-40px"></div>
                             <li class="text-light"><a class="text-light" href="{{route('activities')}}">Future
                                     Studies</a></li>
-                            <div class="height-40px"></div>
                             <div class="height-40px"></div>
                         </ul>
 
                     </div>
                 </div>
                 <div class="card-shadow-footer col-12 col-md-4 contactus contact-cont">
-                    <div class="height-40px"></div>
                     <div class="height-40px"></div>
                     <div class="pl-3 pr-3">
 
@@ -584,7 +558,6 @@
                                         fill="#FFED00" />
                                 </svg></div>
                         </div>
-                        <div class="height-40px"></div>
                         <p class="text-light">National Vocational & Technical Training Commission (NAVTTC).</p>
                         <p class="pt-3 text-light">NAVTTC HQs., Plot No. 38 Kirthar Road, Sector H-9/4 Islamabad</p>
                         <h6 class="pt-4 text-light"><i class="fa fa-phone"></i> 92-51-9044444 </h6>
@@ -618,6 +591,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-none d-sm-none d-md-block w-100" style="position: absolute;z-index: 999;bottom: 0;">
+                    <img class="img-fluid w-100" src="assets/images/diagonial-shape-footer.svg" alt="" />
+                </div>
             </div>
         </div>
     </div>
@@ -628,20 +604,24 @@
     <footer class="container-y px-5 pt-3 pb-5" style="background-color: #080852"
         aria-label="Contact information, Newsletter subscribe, Follow on social, Site navigation, Site copyright, Privacy and accessibility information">
         <div class="row align-items-center mb-2">
+            <div class="col-12 col-sm-12 col-md-6"></div>
+            <div class="col-12 col-sm-12 col-md-6">
 
-            <div class="text-center w-100">
-                <div class="height-40px"></div>
-                <h2 class="text-light">Reform Partners</h2>
-                <div class="height-40px"></div>
+                <div class="text-center w-100">
+                    <div class="height-40px"></div>
+                    <h2 class="text-light">Reform Partners</h2>
+                    <div class="height-40px"></div>
+                </div>
+                <div class="col-12 d-flex justify-content-center logos">
+                    <img src="./assets/assets_new/images/clint-logo-1.png" class="img-fluid">
+                    <img src="./assets/assets_new/images/clint-logo-2.png" class="img-fluid">
+                    <img src="./assets/assets_new/images/clint-logo-3.png" class="img-fluid">
+                    <img src="./assets/assets_new/images/clint-logo-4.png" class="img-fluid">
+                    <img src="./assets/assets_new/images/clint-logo-5.png" class="img-fluid">
+                    <div class="height-40px"></div>
+                </div>
             </div>
-            <div class="col-12 d-flex justify-content-center logos">
-                <img src="./assets/assets_new/images/clint-logo-1.png" class="img-fluid">
-                <img src="./assets/assets_new/images/clint-logo-2.png" class="img-fluid">
-                <img src="./assets/assets_new/images/clint-logo-3.png" class="img-fluid">
-                <img src="./assets/assets_new/images/clint-logo-4.png" class="img-fluid">
-                <img src="./assets/assets_new/images/clint-logo-5.png" class="img-fluid">
-                <div class="height-40px"></div>
-            </div>
+
         </div>
         <div class="row">
             <div>
@@ -944,6 +924,64 @@
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Initialize slick carousel with fade effect
+            $(".slick-carousel").slick({
+                fade: true,
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                adaptiveHeight: true,
+            });
+
+            // Thumbnails click event
+            $(".thumbnails img").on("click", function () {
+                const index = $(this).data("index");
+                $(".slick-carousel").slick("slickGoTo", index);
+            });
+
+            // Highlight the active thumbnail
+            $(".slick-carousel").on("afterChange", function (event, slick, currentSlide) {
+                $(".thumbnails img").removeClass("active");
+                $(".thumbnails img").addClass("comming-caurosal");
+                $(`.thumbnails img[data-index="${currentSlide}"]`).addClass("active");
+                $(`.thumbnails img[data-index="${currentSlide}"]`).removeClass("comming-caurosal");
+            });
+
+            // Set initial active thumbnail
+            $(".thumbnails img").eq(0).addClass("active");
+            $(".thumbnails img").eq(0).removeClass("comming-caurosal");
+        });
+
+        const thumbnails = document.querySelector('.thumbnails');
+
+        let isDragging = false;
+        let startX, scrollLeft;
+
+        thumbnails.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.pageX - thumbnails.offsetLeft;
+            scrollLeft = thumbnails.scrollLeft;
+        });
+
+        thumbnails.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+
+        thumbnails.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        thumbnails.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const x = e.pageX - thumbnails.offsetLeft;
+            const walk = (x - startX) * 2; // Adjust scrolling speed
+            thumbnails.scrollLeft = scrollLeft - walk;
+        });
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
